@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.teamcode;
+package org.firstinspires.ftc.teamcode.tuning.otos;
 
 
 
@@ -8,7 +8,6 @@ import static com.acmerobotics.roadrunner.ftc.OTOSKt.RRPoseToOTOSPose;
 import com.acmerobotics.roadrunner.Pose2d;
 import com.acmerobotics.roadrunner.PoseVelocity2d;
 import com.acmerobotics.roadrunner.Vector2d;
-import com.acmerobotics.roadrunner.drive.MecanumDrive;
 import com.acmerobotics.roadrunner.ftc.DownsampledWriter;
 import com.acmerobotics.roadrunner.ftc.FlightRecorder;
 import com.acmerobotics.roadrunner.ftc.SparkFunOTOSCorrected;
@@ -16,6 +15,7 @@ import com.qualcomm.hardware.sparkfun.SparkFunOTOS;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
 import org.firstinspires.ftc.robotcore.external.navigation.DistanceUnit;
+import org.firstinspires.ftc.teamcode.drive.opmode.RRMecanumDrive;
 import org.firstinspires.ftc.teamcode.messages.PoseMessage;
 
 /**
@@ -25,7 +25,7 @@ import org.firstinspires.ftc.teamcode.messages.PoseMessage;
  * Portions of this code made and released under the MIT License by SparkFun
  * Unless otherwise noted, comments are from SparkFun
  */
-public class SparkFunOTOSDrive extends MecanumDrive {
+public class SparkFunOTOSDrive extends RRMecanumDrive {
     public static class Params {
         // Assuming you've mounted your sensor to a robot and it's not centered,
         // you can specify the offset for the sensor relative to the center of the
